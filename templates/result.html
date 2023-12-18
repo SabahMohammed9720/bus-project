@@ -1,0 +1,127 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BUS FINDER</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static',filename='css/result.css') }}"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static',filename='css/all.css') }}"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static',filename='css/normalize.css') }}"
+    />
+
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static',filename='css/all.min.css') }}"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://www.fontspace.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <script src="./js/main.js"></script>
+  </head>
+
+  <body>
+    <!--         Nav_Bar         -->
+    <div class="header" id="fixed">
+      <div class="logo">
+        <img src="{{ logo }}" alt="" />
+        <p>BUS FINDER</p>
+      </div>
+      <div class="right-side">
+        <div class="navbar">
+          <ul>
+            <li>
+              <a href="{{ url_for('home') }}">HOME</a>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <a href="{{ url_for('about') }}">ABOUT</a>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <a href="{{ url_for('add') }}" id="services">ADD</a>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <a href="{{ url_for('footer') }}">CONTACT US</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!--         Nav_Bar         -->
+    <!--start search result-->
+    <div class="search-result" id="result">
+      <div class="container">
+        <div class="main-title">
+          <h1>From {{ from1 }}  ---  To {{ to1 }}  ---  Bus Number {{ num }}</h1>
+        </div>
+  
+
+        <div class="content">
+          <div class="rbuttons">
+            <div class="result">
+              <h1 class="r-one">Result</h1>
+
+
+              <!-- start table-->
+      <div class="table">
+          <table>
+            <thead class="thead">
+                   <tr>
+              <th class="centerAlign">Bus Number &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  Directions</th>
+            </tr>
+            </thead>
+       <tbody class="scroll" >
+                {%for i in range(leng)%}
+            <tr>
+              <th>{{result[i]['busNumber']}}</th>
+              <td>{{result[i]['busDirc']}}</td>
+            </tr>
+
+            {%endfor%}
+       </tbody>
+
+        
+
+    
+          </table>
+        </div>
+              <!-- start table-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--end search result-->
+  </body>
+</html>

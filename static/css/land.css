@@ -1,0 +1,64 @@
+@font-face {
+  font-family: 'Rubik' ;
+  src: url(Rubik-VariableFont_wght.ttf);
+}
+
+
+.fp {
+  background-color: var(--background-color);
+}
+.fp .container .land {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  position: relative;
+  top: 80px;
+}
+.fp .container .land .paragraph {
+  position: relative;
+  top: 10px;
+  width: 60%;
+position: relative;
+left: 0;
+}
+.fp .container .land .paragraph h1 {
+  font-size: xxx-large;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-family: 'Rubik';
+  color: #2f5c86;
+  text-align: left;
+}
+.fp .container .land .paragraph p {
+  color: #2f5c86;
+  font-weight: bold;
+  font-size: 22px;
+  font-family: 'Rubik';
+    text-align: left;
+
+}
+.fp .container .land button {
+  background-image: var(--background-image);
+  border-radius: 90px;
+  padding: 20px 90px;
+  color: white;
+  border-color: white;
+  font-size: 30px;
+  margin: 40px 90px 90px;
+  border: none;
+  animation: glow 1s infinite;
+  transition: 0.5s;
+  font-weight: bold;
+  font-family: 'Rubik';
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.fp .container .land button a {
+  text-decoration: none;
+  color: white;
+}
+.fp .container .land button:hover {
+  background-color: #ffffff;
+}
+/*end fp*/

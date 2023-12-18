@@ -1,0 +1,101 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BUS FINDER</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static',filename='css/about.css') }}"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static',filename='css/all.css') }}"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static',filename='css/normalize.css') }}"
+    />
+
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static',filename='css/all.min.css') }}"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://www.fontspace.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <script src="./js/main.js"></script>
+  </head>
+
+  <body>
+    <!--         Nav_Bar         -->
+    <div class="header" id="fixed">
+      <div class="logo">
+        <img src="{{ logo }}" alt="" />
+        <p>BUS FINDER</p>
+      </div>
+      <div class="right-side">
+        <div class="navbar">
+          <ul>
+            <li>
+              <a href="{{ url_for('home') }}">HOME</a>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <a href="{{ url_for('about') }}">ABOUT</a>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <a href="{{ url_for('add') }}" id="services">ADD</a>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <a href="{{ url_for('footer') }}">CONTACT US</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!--         Nav_Bar         -->
+    <!--start about-->
+    <div class="about" id="ABOUT">
+      <div class="container">
+        <div class="main-title">
+          <h1 style="color:white;">who are we</h1>
+        </div>
+        <div class="content1">
+          <div class="bus-image">
+            <img src="{{ info }}" alt="" />
+          </div>
+          <div class="paragraph2">
+            <h2>The Cairo Public Transport Authority (CTA)</h2>
+            <p>
+              is a general egyptian governmental body affiliated with the cairo
+              governate.
+              <br />
+              CTA operates buses, ferries and river buses. Through its
+              subsidiary Greater Cairo Bus Company (GCBC) it operates buses and
+              minibuses, and is progressively converting its buses from diesel
+              to low-emission CNG engines under the Cairo Air Improvement
+              Project.
+            </p>
+            <p>
+              CTA operates more than 3,000 buses, 950 minibuses and 40 Nile
+              ferries. With more than 37,000 employees, it offers transport
+              services to more than 3.5 million riders a day.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--end about-->
+  </body>
+</html>

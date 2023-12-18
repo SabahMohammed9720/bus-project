@@ -1,0 +1,222 @@
+@font-face {
+  font-family: 'Rubik' ;
+  src: url(Rubik-VariableFont_wght.ttf);
+}
+.services {
+  background-color: var(--background-color);
+  height: 95%;
+}
+
+.services .container .content2 .sbuttons .button-one .myDropdown {
+  margin-left: 150px;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 200px;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.services .container .content2 .sbuttons .button-one .myDropdown:hover {
+  border-color: #333;
+}
+
+.services .container .content2 .sbuttons .button-one .myDropdown:focus {
+  outline: none;
+  border-color: #66afe9;
+  box-shadow: 0 0 5px #66afe9;
+}
+
+/* Style the dropdown arrow */
+.services .container .content2 .sbuttons .button-one .myDropdown:after {
+  content: "\25BC";
+  font-size: 16px;
+  color: #333;
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+}
+
+.services .container .content2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'Rubik';
+  position: relative;
+  height: 500px;
+  top: 50px;
+}
+
+.services .container .content2 .sbuttons .button-one {
+  margin-top: 30;
+  position: relative;
+}
+.services .container .content2 .sbuttons .button-one {
+  position: relative;
+}
+.services .container .content2 .sbuttons .button-one input {
+  border-radius: 20px;
+  position: relative;
+  left: 20px;
+  border-color: transparent;
+  cursor: pointer;
+  height: 85px;
+  width: 900px;
+  text-transform: capitalize;
+  font-size: 24px;
+  text-indent: 20px;
+}
+.services .container .content2 .sbuttons .button-one input,
+select,
+textarea {
+  color: #17407f;
+}
+.services .container .content2 .sbuttons .button-one .one-plus {
+  position: absolute;
+  bottom: 60px;
+  left: 35px;
+  border-radius: 25px;
+  width: 130px;
+  text-align: center;
+  height: 45px;
+  color: white;
+  background-image: var(--background-image);
+  border-color: transparent;
+  text-transform: capitalize;
+  font-size: 24px;
+  padding-top: 5;
+}
+.services .container .content2 .sbuttons .button-one .one-pluss {
+  position: absolute;
+  bottom: 60px;
+  left: 35px;
+  border-radius: 25px;
+  width: 600px;
+  text-align: center;
+  height: 45px;
+  color: white;
+  background-image: var(--background-image);
+  border-color: transparent;
+  text-transform: capitalize;
+  font-size: 24px;
+  padding-top: 5;
+}
+.services .container .content2 .sbuttons .button-one .one-plusss {
+  position: absolute;
+  bottom: 60px;
+  left: 35px;
+  border-radius: 25px;
+  width: 300px;
+  text-align: center;
+  height: 45px;
+  color: white;
+  background-image: var(--background-image);
+  border-color: transparent;
+  text-transform: capitalize;
+  font-size: 24px;
+  padding-top: 5;
+}
+.services .container .content2 .sbuttons .button-two {
+  position: relative;
+}
+.services .container .content2 .sbuttons .button-two form input {
+  border-radius: 20px;
+  position: relative;
+  left: 20px;
+  border-color: transparent;
+  cursor: pointer;
+  height: 85px;
+  width: 900px;
+  text-transform: capitalize;
+  font-size: 24px;
+  text-indent: 20px;
+  top: 20px;
+}
+.services .container .content2 .sbuttons .button-two .two-plus {
+  position: absolute;
+  right: 0;
+  border-radius: 25px;
+  width: 130px;
+  text-align: center;
+  height: 45px;
+  color: white;
+  background-image: var(--background-image);
+  border-color: transparent;
+  text-transform: capitalize;
+  font-size: 24px;
+}
+
+
+
+.services .container .content2 .sbuttons .b-search {
+  background-color: #2f5c86;
+  border-radius: 90px;
+  color: white;
+  border-color: white;
+  font-size: 30px;
+  margin: 20px 30px 0;
+  border: none;
+  animation: glow 1s infinite;
+  transition: 0.5s;
+  font-weight: bold;
+  font-family: 'Rubik';
+  text-transform: uppercase;
+  cursor: pointer;
+  width: 200px;
+  height: 50px;
+}
+a {
+  color: white;
+}
+.services .container .content2 .info img {
+  width: 50%;
+  overflow: hidden;
+  position: relative;
+  left: 150px;
+  bottom: 20px;
+  transform: scaleX(-1);
+}
+
+.services .container .content2 .info {
+  position: relative;
+  top: -50px;
+}
+.services .container .content2 .info p {
+  position: relative;
+  left: 100px;
+  color: #2f5c86;
+  font-size: x-large;
+  padding: 20px 0;
+  font-weight: bold;
+  font-family: 'Rubik';
+}
+.services .container {
+  height: 90%;
+}
+.container {
+  height: 90%;
+}
+/*end services*/
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type="Direc"]::-webkit-outer-spin-button,
+input[type="Direc"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+
+.container5{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 200;
+  margin-bottom: auto;
+  width: 40%;
+}

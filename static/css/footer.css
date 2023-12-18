@@ -1,0 +1,236 @@
+@font-face {
+  font-family: 'Rubik' ;
+  src: url(Rubik-VariableFont_wght.ttf);
+}
+
+
+:root {
+  --background-color: var(--background-color);
+  --main-color: linear-gradient(90deg, #2f5c86, #100234);
+  --secondery-color: #edebff;
+  --main-padding: 100px;
+}
+/*end variable*/
+/*start global rules*/
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+a,
+ul li {
+  text-decoration: none;
+  cursor: pointer;
+  list-style: none;
+}
+.container {
+
+  margin-right: auto;
+  margin-left: auto;
+  width: auto;
+  height: 90%;
+  padding-left: 25px;
+  padding-right: 25px;
+  overflow: hidden;
+  background-color:  var(--background-color);
+;
+}
+.main-title {
+  position: relative;
+  top: 30;
+  height: auto;
+  margin-bottom: 30;
+}
+.main-title h1 {
+  margin: 0;
+  text-transform: uppercase;
+  color: #2f5c86;
+  letter-spacing: 1.4;
+  font-family: 'Rubik';
+  font-weight: 100;
+  font-size: 40px;
+  padding-top: 40px;
+  padding-left: 30px;
+}
+/*end global rules*/
+/*start fixed*/
+#fixed {
+  background-image: var(--background-image);
+  height: 100px;
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+}
+#fixed .right-side {
+  display: flex;
+  position: relative;
+  left: 700;
+  bottom: 60;
+}
+#fixed .logo {
+  padding-left: 32px;
+}
+.header .right-side {
+  display: flex;
+  position: relative;
+  left: 40;
+}
+.header .logo img {
+  border-style: none;
+  width: 70px;
+  color: white;
+  filter: invert(1);
+  height: auto;
+  padding-top: 10px;
+}
+.header .logo p {
+  position: relative;
+  left: 25px;
+  bottom: 12px;
+  font-size: 20;
+  color: white;
+}
+.header .right-side .navbar {
+  display: flex;
+}
+.header .right-side .navbar ul li a {
+  color: white;
+  text-transform: capitalize;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  font-family: 'Rubik';
+  font-size: 25;
+  padding: 0 10px;
+  font-weight: bolder;
+  cursor: pointer;
+}
+
+.header .right-side .navbar ul li a::before {
+  content: " ";
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  background-color: white;
+  transition: 0.3s;
+  top: 26px;
+  left: -100%;
+}
+.header .right-side .navbar ul li a:hover {
+  color: white;
+  transition: 0.3s;
+}
+.header .right-side .navbar ul li a:hover::before {
+  left: 0;
+}
+/*end fixed*/
+/*start contact*/
+footer {
+  height: 100%;
+}
+.contact {
+  background-color: #edebff;
+  position: relative;
+  bottom: -62;
+}
+.contact .container .info-video {
+  display: flex;
+  justify-content: space-between;
+}
+.contact .container .info-video .info {
+  position: relative;
+}
+.contact .container .info-video .info .info1 {
+  display: flex;
+  justify-content: space-evenly;
+  position: relative;
+  top: 70px;
+}
+
+.contact .container .info-video .info .info1 i {
+  color: #2f5c86;
+  font-size: xx-large;
+}
+.phone {
+  position: relative;
+  right: 10px;
+}
+.social {
+  display: inline;
+  position: relative;
+  right: 10px;
+}
+.contact .container .info-video .info .info1 .p-s p {
+  text-transform: uppercase;
+  font-size: large;
+  font-weight: bold;
+  color: #2f5c86;
+}
+.contact .container .info-video .info .info1 .p-s {
+  position: relative;
+  right: 70px;
+}
+.contact .container .info-video .info .info2 .p-s {
+  position: relative;
+  left: 10px;
+}
+.contact .container .info-video .info .info2 {
+  display: flex;
+  justify-content: space-evenly;
+  position: relative;
+  top: 100px;
+  left: 75px;
+}
+.contact .container .info-video .info .info2 i {
+  color: #2f5c86;
+  font-size: xx-large;
+}
+.contact .container .info-video .info .info2 .p-s p {
+  text-transform: uppercase;
+  font-size: large;
+  font-weight: bold;
+  color: #2f5c86;
+}
+.contact .container .footer {
+  position: relative;
+  height: 349px;
+  top: 200px;
+}
+.contact .container .footer .footer-inf {
+  display: flex;
+  width: 40%;
+  height: 50px;
+  margin-left: 40px;
+  justify-content: space-around;
+  padding-top: 10px;
+  background-color: transparent;
+  border-radius: 90px;
+  color: white;
+  border: 1.5px solid #2f5c86;
+  font-size: 30px;
+  font-weight: bold;
+  font-family: 'Rubik';
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.contact .container .footer .footer-inf p {
+  color: #2f5c86;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 25px;
+}
+.contact .container .footer .footer-inf .icons a i {
+  color: #2f5c86;
+  padding-right: 10px;
+  font-size: 24px;
+  cursor: pointer;
+}
+/*end contact*/

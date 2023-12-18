@@ -1,0 +1,114 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BUS FINDER</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static',filename='css/footer.css') }}"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static',filename='css/normalize.css') }}"
+    />
+
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static',filename='css/all.css') }}"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://www.fontspace.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <script src="./js/main.js"></script>
+  </head>
+
+  <body>
+    <!--         Nav_Bar         -->
+    <div class="header" id="fixed">
+      <div class="logo">
+        <img src="{{ logo }}" alt="" />
+        <p>BUS FINDER</p>
+      </div>
+      <div class="right-side">
+        <div class="navbar">
+          <ul>
+            <li>
+              <a href="{{ url_for('home') }}">HOME</a>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <a href="{{ url_for('about') }}">ABOUT</a>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <a href="{{ url_for('add') }}" id="services">ADD</a>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <a href="{{ url_for('footer') }}">CONTACT US</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!--         Nav_Bar         -->
+    <!--start contact-->
+    <footer>
+      <div class="contact" id="CONTACT">
+        <div class="container">
+          <div class="main-title">
+            <h1>let's contact :</h1>
+          </div>
+          <div class="info-video">
+            <div class="info">
+              <div class="info1">
+                <div class="phone">
+                  <img src="{{ phone }}" />
+                </div>
+                <div class="p-s">
+                  <p>Phone :</p>
+                  <p>01210178301</p>
+                </div>
+              </div>
+              <div class="info2">
+                <div class="phone">
+                  <img src="{{ email }}" />
+                </div>
+                <div class="p-s">
+                  <p>email :</p>
+                  <p>sabahmohamed9720@gmail.com</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="footer">
+            <div class="footer-inf">
+              <p>social</p>
+              <div class="icons">
+                <div class="social">
+                  <img src="{{ facebook }}" />
+                </div>
+                <div class="social">
+                  <img src="{{ twitter }}" />
+                </div>
+                <div class="social">
+                  <img src="{{ insta }}" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!--end contact-->
+  </body>
+</html>

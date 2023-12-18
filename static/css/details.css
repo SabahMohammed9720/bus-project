@@ -1,0 +1,145 @@
+@font-face {
+  font-family: 'Rubik' ;
+  src: url(Rubik-VariableFont_wght.ttf);
+}
+.directions {
+    height: 100%;
+    background-image: var(--background-image);
+}
+.directions .full-content{
+    position: relative;
+    top: 150;
+    height: 600px;
+}
+.directions .direction-one {
+    position: relative;
+    display: flex;
+}
+.directions .direction-one .direction1 {
+    position: relative;
+}
+.directions .direction-one .direction1 i {
+    position: relative;
+    left: 150px;
+    font-size: xx-large;
+    color: white;
+}
+.directions .direction-one .direction1 h4 { 
+    position: relative;
+    left: 90px;
+    padding-top: 20px;
+    color: white;
+    text-transform: capitalize;}
+.directions .direction-one .direction1 p{
+    position: relative;
+    left: 90px;
+    color: white;
+    text-transform: capitalize;
+    padding-bottom: 40px;
+}
+.directions .direction-one .direction1 hr {
+    width: 500px;
+    position: relative;
+    left: 150px;
+}
+.directions .direction-one button {
+    height: 50px;
+    width: 190px;
+    border-radius: 50px;
+    border-color: transparent;
+    color: white;
+    text-transform: capitalize;
+  font-family: 'Rubik';
+    font-weight: bold;
+    cursor: pointer;
+    background-image: var(--background-image);
+}
+.directions .direction-two {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 0;
+}
+.directions .direction-two .direction2 {
+    position: relative;
+}
+.directions .direction-two .direction2 i {
+    position: relative;
+    left: 270px;
+    font-size: xx-large;
+    color: white;
+}
+.directions .direction-two .direction2 h4 { 
+    position: relative;
+    left: 90px;
+    padding-top: 20px;
+    color: white;
+    text-transform: capitalize;}
+
+.directions .direction-two .direction2 p{
+    position: relative;
+    left: 90px;
+    color: white;
+    text-transform: capitalize;
+    padding-bottom: 40px;
+}
+.directions .direction-two .direction2 hr {
+    width: 500px;
+    position: relative;
+    left: 150px;
+}
+.directions .direction-two button:first-of-type {
+    height: 50px;
+    width: 190px;
+    border-radius: 50px;
+    border-color: transparent;
+    color: white;
+    text-transform: capitalize;
+  font-family: 'Rubik';
+    font-weight: bold;
+    cursor: pointer;
+    background-image: var(--background-image);
+    position: relative;
+    right: 230px;
+}
+.directions .direction-two .r-one {
+    width: 150px;
+    height: 40px;
+    border-color: transparent;
+    color: white;
+    text-transform: capitalize;
+  font-family: 'Rubik';
+    font-weight: bold;
+    background-color: #9A9A9D;
+    position: relative;
+    right: 80%;
+}
+.directions .hr {
+    transform: rotate(90deg);
+    position: relative;
+    right: 350px;
+}
+.directions .km {
+    position: relative;
+    color: white;
+    font-weight: bold;
+}
+.directions .km p {
+    position: relative;
+    top: 120px;
+}
+.directions .km h4::before {
+    content: " ";
+    position: absolute;
+    width: 38%;
+    height: 2px;
+    background-color: white;
+    transition: 0.3s;
+    transform: rotate(90deg);
+    left: -170;
+}
+.directions .km h4{
+    position: relative;
+    top: 270;
+}
+/*end direction*/

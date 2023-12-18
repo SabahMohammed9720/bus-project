@@ -1,0 +1,125 @@
+<html lang="en">
+  <head>
+    <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>BUS FINDER</title>
+      <link
+        rel="stylesheet"
+        href="{{ url_for('static',filename='css/search.css') }}"
+      />
+      <link
+        rel="stylesheet"
+        href="{{ url_for('static',filename='css/all.css') }}"
+      />
+      <link
+        rel="stylesheet"
+        href="{{ url_for('static',filename='css/normalize.css') }}"
+      />
+
+      <link
+        rel="stylesheet"
+        href="{{ url_for('static',filename='css/all.min.css') }}"
+      />
+
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://www.fontspace.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap"
+        rel="stylesheet"
+      />
+      <script src="./js/main.js"></script>
+    </head>
+  </head>
+
+  <body>
+    <!--         Nav_Bar         -->
+    <div class="header" id="fixed">
+      <div class="logo">
+        <img src="{{ logo }}" alt="" />
+        <p>BUS FINDER</p>
+      </div>
+      <div class="right-side">
+        <div class="navbar">
+          <ul>
+            <li>
+              <a href="{{ url_for('home') }}">HOME</a>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <a href="{{ url_for('about') }}">ABOUT</a>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <a href="{{ url_for('add') }}" id="services">ADD</a>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <a href="{{ url_for('footer') }}">CONTACT US</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!--         Nav_Bar         -->
+    <!--start services-->
+    <div class="services" id="SERVICES">
+      <div class="container">
+        <div class="main-title">
+          <h1>services we provide</h1>
+        </div>
+        <div class="content2">
+          <div class="sbuttons">
+            <form action="/select" method="post">
+              <div class="button-one">
+                <input
+                  type="text"
+                  name="from"
+                  id="from"
+                  placeholder="Enter First Distination"
+                />
+
+                <h1 class="one-plus">from</h1>
+              </div>
+              <div class="button-one">
+                <input
+                  type="text"
+                  name="to"
+                  id="to"
+                  placeholder="Enter Second Distination"
+                />
+
+                <h1 class="one-plus">To</h1>
+              </div>
+              <div class="button-one">
+                <input
+                  type="number"
+                  name="num"
+                  id="num"
+                  placeholder="Enter Bus Number"
+                />
+
+                <h1 class="one-pluss">Or You Can Just Search By Bus Number</h1>
+              </div>
+
+              <button class="b-search" type="submit" id="search">Search</button>
+            </form>
+          </div>
+          <div class="info">
+            <img src="{{ image }}" alt="aa" />
+            <p>
+              We provide you with <br />
+              online bus search
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--end services-->
+  </body>
+</html>
