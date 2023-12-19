@@ -32,7 +32,7 @@ ul li {
   width: auto;
   padding-left: 25px;
   padding-right: 25px;
-  overflow: hidden;
+  overflow: auto;
 }
 .main-title {
   position: relative;
