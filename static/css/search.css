@@ -4,7 +4,7 @@
 }
 .services {
   background-color: var(--background-color);
-  height: 95%;
+  height: 100%;
 }
 
 .services .container .content2 .sbuttons .button-one .myDropdown {
