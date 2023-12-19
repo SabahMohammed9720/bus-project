@@ -29,13 +29,14 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap"
       rel="stylesheet"
     />
+    <script src="{{ url_for('static',filename='js/main.js') }}"></script>
   </head>
 
   <body>
     <!--         Nav_Bar         -->
-    <div class="header" id="fixed">
+    <!-- <div class="header" id="fixed">
       <div class="logo">
-        <img src="{{ logo }}" alt="" />
+        <img src="{{logo}}" alt="" />
         <p>BUS FINDER</p>
       </div>
       <div class="right-side">
@@ -62,7 +63,8 @@
           </ul>
         </div>
       </div>
-    </div>
+    </div> -->
+    <script> showNavbar()</script>
     <!--         Nav_Bar         -->
 
     <!--start first page-->
