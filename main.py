@@ -109,8 +109,19 @@ def post():
     num = request.form.get("num")
     conn = sqlite3.connect("database/buses.db")
     cur = conn.cursor()
+    cur.execute(f"""SELECT Bus_nm 
+  FROM buses where Bus_nm = {num};            
+                    """)
+
+           
+        
     
-    cur.execute(f"""INSERT INTO buses (
+    conn.commit()
+    result = cur.fetchall()
+    print(result)
+    
+    if result == []:
+      cur.execute(f"""INSERT INTO buses (
                       Direction,
                       Bus_nm
                   )
@@ -120,11 +131,24 @@ def post():
                   );
                   """)
     
-    conn.commit()
-    conn.close()
-    logo = os.path.join(app.config['UPLOAD_FOLDER'] , 'logo.png')
-    image = os.path.join(app.config['UPLOAD_FOLDER'] , 'thanks.png')
-    return render_template("success.html" , image = image , logo = logo  )
+      conn.commit()
+      conn.close()
+      logo = os.path.join(app.config['UPLOAD_FOLDER'] , 'logo.png')
+      image = os.path.join(app.config['UPLOAD_FOLDER'] , 'thanks.png')
+      return render_template("success.html" , image = image , logo = logo  )
+    else:
+        logo = os.path.join(app.config['UPLOAD_FOLDER'] , 'logo.png')
+        image = os.path.join(app.config['UPLOAD_FOLDER'] , 'failed.png')
+        return render_template("failed.html" , image = image , logo = logo  )
+        
+      
+      
+    
+    
+    
+    
+    
+
 
 
 

@@ -35,3 +35,7 @@ function showNavbar(){
         `
     )
 }
+
+function alertMessage(){
+  
+}
