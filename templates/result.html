@@ -32,67 +32,52 @@
   </head>
 
   <body>
-         <!--         Nav_Bar         -->
-         <script> showNavbar()</script>
-         <!--         Nav_Bar         -->
+    <!--         Nav_Bar         -->
+    <script>
+      showNavbar();
+    </script>
+    <!--         Nav_Bar         -->
     <!--start search result-->
     <div class="search-result" id="result">
       <div class="container">
         <div class="main-title">
-          <h1>From {{ from1 }}  ---  To {{ to1 }}  ---  Bus Number {{ num }}</h1>
+          <h1>From {{ from1 }} --- To {{ to1 }} --- Bus Number {{ num }}</h1>
         </div>
-  
 
         <div class="content">
           <div class="rbuttons">
             <div class="result">
               <h1 class="r-one">Result</h1>
 
-
               <!-- start table-->
-      <div class="table">
-          <table>
-            <thead class="thead">
-                   <tr>
-              <th class="centerAlign">Bus Number &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  Directions</th>
-            </tr>
-            </thead>
-       <tbody class="scroll" >
-                {%for i in range(leng)%}
-            <tr>
-              <th>{{result[i]['busNumber']}}</th>
-              <td>{{result[i]['busDirc']}}</td>
-            </tr>
+              <div class="table">
+                <table>
+                  <thead class="thead">
+                    <tr>
+                      <th class="centerAlign">
+                        Bus Number &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+                        &nbsp Directions
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody class="scroll">
+                    {%for i in range(leng)%}
+                    <tr>
+                      <th>{{result[i]['busNumber']}}</th>
+                      <td>{{result[i]['busDirc']}}</td>
+                    </tr>
 
-            {%endfor%}
-       </tbody>
-
-        
-
-    
-          </table>
-        </div>
+                    {%endfor%}
+                  </tbody>
+                </table>
+              </div>
               <!-- start table-->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
             </div>
           </div>
         </div>
       </div>
     </div>
     <!--end search result-->
+    <div class="loader"></div>
   </body>
 </html>
