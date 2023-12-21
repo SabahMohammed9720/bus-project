@@ -55,7 +55,7 @@ def select():
     cur = conn.cursor()
     if num != "" :
         cur.execute(f"""SELECT Bus_nm , Direction
-  FROM buses where Direction Like '{from_d}%' and Direction Like '%{to_d}%' and Bus_nm = {num};
+  FROM buses where Direction Like '{from_d}%' and Direction Like '%{to_d}%' and Bus_nm like '%{num}%';
                 
                     """)
     else:
