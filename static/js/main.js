@@ -1,5 +1,5 @@
-function showNavbar(){
-    document.write( `
+function showNavbar() {
+  document.write(`
     <!--         Nav_Bar         -->
     <div class="header" id="fixed">
       <div class="logo">
@@ -32,14 +32,13 @@ function showNavbar(){
       </div>
     </div>
     <!--         Nav_Bar         -->
-        `
-    )
+        `);
 }
 
-window.addEventListener("load" , ()=>{
+window.addEventListener("load", () => {
   const loader = document.querySelector(".loader");
   loader.classList.add("loader-hidden");
-  loader.addEventListener("transitionend", () => {
-    document.body.removeChild("loader");
-  });
-} )
+  // loader.addEventListener("transitionend", () => {
+  //   document.body.removeChild("loader");
+  // });
+});
