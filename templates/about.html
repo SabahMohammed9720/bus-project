@@ -33,18 +33,23 @@
   </head>
 
   <body>
-   <!--         Nav_Bar         -->
-   <script> showNavbar()</script>
-   <!--         Nav_Bar         -->
+    <!--         Nav_Bar         -->
+    <script>
+      showNavbar();
+    </script>
+    <!--         Nav_Bar         -->
     <!--start about-->
     <div class="about" id="ABOUT">
       <div class="container">
         <div class="main-title">
-          <h1 style="color:white;">who are we</h1>
+          <h1 style="color: white">who are we</h1>
         </div>
         <div class="content1">
           <div class="bus-image">
-            <img src="{{ info }}" alt="" />
+            <img
+              src="{{ url_for('static',filename='pics/info.png')  }}"
+              alt=""
+            />
           </div>
           <div class="paragraph2">
             <h2>The Cairo Public Transport Authority (CTA)</h2>
@@ -68,6 +73,6 @@
       </div>
     </div>
     <!--end about-->
-  </body>    <div class="loader"></div>
-
+  </body>
+  <div class="loader"></div>
 </html>

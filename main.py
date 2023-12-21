@@ -13,55 +13,36 @@ app.config['UPLOAD_FOLDER'] = picFolder
 
 @app.route("/home")
 def home():
-    pic1 = os.path.join(app.config['UPLOAD_FOLDER'] , 'bus-animation2.gif')
-    logo = os.path.join(app.config['UPLOAD_FOLDER'] , 'logo.png')    
-    return render_template("land.html" , image = pic1  , logo = logo)
+    return render_template("land.html" )
 
 @app.route("/success")
 def success():
-    logo = os.path.join(app.config['UPLOAD_FOLDER'] , 'logo.png')
-    image = os.path.join(app.config['UPLOAD_FOLDER'] , 'thanks.png')
-    return render_template("success.html" , image = image , logo = logo  )
+    return render_template("success.html" )
 
 @app.route("/search")
 def search():
-    logo = os.path.join(app.config['UPLOAD_FOLDER'] , 'logo.png')
-    pic1 = os.path.join(app.config['UPLOAD_FOLDER'] , 'service.png')
-    return render_template("search.html" , image = pic1 , logo = logo )
+    return render_template("search.html" )
 
 @app.route("/result")
 def result():
-    logo = os.path.join(app.config['UPLOAD_FOLDER'] , 'logo.png')
-    bus = os.path.join(app.config['UPLOAD_FOLDER'] , 'bus.png')
-    return render_template("result.html" , bus = bus , logo = logo )
+    return render_template("result.html"   )
 
 @app.route("/add")
 def add():
-    logo = os.path.join(app.config['UPLOAD_FOLDER'] , 'logo.png')
-    pic1 = os.path.join(app.config['UPLOAD_FOLDER'] , 'add.png')
-    return render_template("add.html" ,image = pic1 , logo = logo)
+    return render_template("add.html"  )
 
 @app.route("/about")
 def about():
-    logo = os.path.join(app.config['UPLOAD_FOLDER'] , 'logo.png')
-    info = os.path.join(app.config['UPLOAD_FOLDER'] , 'info.png')
-    return render_template("about.html" , info = info , logo = logo )
+    return render_template("about.html"  )
 
 @app.route("/details")
 def details():
-    logo = os.path.join(app.config['UPLOAD_FOLDER'] , 'logo.png')
-    pic1 = os.path.join(app.config['UPLOAD_FOLDER'] , 'service.png')
-    return render_template("details.html" , image = pic1 , logo = logo )
+    return render_template("details.html"   )
 
 @app.route("/footer")
 def footer():
-    logo = os.path.join(app.config['UPLOAD_FOLDER'] , 'logo.png')
-    phone = os.path.join(app.config['UPLOAD_FOLDER'] , 'phone.png')
-    email = os.path.join(app.config['UPLOAD_FOLDER'] , 'email.png')
-    facebook = os.path.join(app.config['UPLOAD_FOLDER'] , 'facebook.png')
-    twitter = os.path.join(app.config['UPLOAD_FOLDER'] , 'twitter.png')
-    insta = os.path.join(app.config['UPLOAD_FOLDER'] , 'insta.png')
-    return render_template("footer.html" , phone = phone , logo = logo , email = email , facebook = facebook , twitter = twitter , insta = insta  )
+
+    return render_template("footer.html"  )
 
 
 
@@ -91,14 +72,12 @@ def select():
 
     len(result)
     conn.close()
-    logo = os.path.join(app.config['UPLOAD_FOLDER'] , 'logo.png')
-    bus = os.path.join(app.config['UPLOAD_FOLDER'] , 'bus.png')
     finalResult=[]
     for i in range(len(result)):
         d = {"busNumber" : result[i][0] , "busDirc" : result[i][1] }
         finalResult.append(d)
     leng = len(result)
-    return render_template("result.html" , bus = bus , logo = logo , result = finalResult , leng = leng , from1 = from_d , to1 = to_d , num = num )
+    return render_template("result.html" , result = finalResult , leng = leng , from1 = from_d , to1 = to_d , num = num )
 
 
 
@@ -133,13 +112,10 @@ def post():
     
       conn.commit()
       conn.close()
-      logo = os.path.join(app.config['UPLOAD_FOLDER'] , 'logo.png')
       image = os.path.join(app.config['UPLOAD_FOLDER'] , 'thanks.png')
-      return render_template("success.html" , image = image , logo = logo  )
+      return render_template("success.html" , image = image   )
     else:
-        logo = os.path.join(app.config['UPLOAD_FOLDER'] , 'logo.png')
-        image = os.path.join(app.config['UPLOAD_FOLDER'] , 'failed.png')
-        return render_template("failed.html" , image = image , logo = logo  )
+        return render_template("failed.html"  )
         
       
       
