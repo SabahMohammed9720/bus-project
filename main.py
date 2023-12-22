@@ -112,8 +112,7 @@ def post():
     
       conn.commit()
       conn.close()
-      image = os.path.join(app.config['UPLOAD_FOLDER'] , 'thanks.png')
-      return render_template("success.html" , image = image   )
+      return render_template("success.html" )
     else:
         return render_template("failed.html"  )
         

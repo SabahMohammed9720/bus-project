@@ -25,13 +25,15 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap"
       rel="stylesheet"
     />
-     <script src="{{ url_for('static',filename='js/main.js') }}"></script>
+    <script src="{{ url_for('static',filename='js/main.js') }}"></script>
   </head>
 
   <body>
-      <!--         Nav_Bar         -->
-      <script> showNavbar()</script>
-      <!--         Nav_Bar         -->
+    <!--         Nav_Bar         -->
+    <script>
+      showNavbar('FFFFFF','FFFFFF','FFFFFF','100234');
+    </script>
+    <!--         Nav_Bar         -->
     <!--start contact-->
     <footer>
       <div class="contact" id="CONTACT">
@@ -43,7 +45,9 @@
             <div class="info">
               <div class="info1">
                 <div class="phone">
-                  <img src="{{ url_for('static',filename='pics/phone.png')  }}" />
+                  <img
+                    src="{{ url_for('static',filename='pics/phone.png')  }}"
+                  />
                 </div>
                 <div class="p-s">
                   <p>Phone :</p>
@@ -52,7 +56,9 @@
               </div>
               <div class="info2">
                 <div class="phone">
-                  <img src="{{ url_for('static',filename='pics/email.png')  }}" />
+                  <img
+                    src="{{ url_for('static',filename='pics/email.png')  }}"
+                  />
                 </div>
                 <div class="p-s">
                   <p>email :</p>
@@ -63,23 +69,49 @@
           </div>
           <div class="footer">
             <div class="footer-inf">
-              <p>social</p>
+              <p>Social Media</p>
               <div class="icons">
                 <div class="social">
-                  <img src="{{ url_for('static',filename='pics/facebook.png')  }}" />
+                  <a
+                    href="https://www.facebook.com"
+                  >
+                    <img
+                      src="{{ url_for('static',filename='pics/facebook.png')  }}"
+                  /></a>
                 </div>
                 <div class="social">
-                  <img src="{{ url_for('static',filename='pics/twitter.png')  }}" />
+                  <a
+                    href="https://x.com"
+                  >
+                    <img
+                      src="{{ url_for('static',filename='pics/twitter.png')  }}"
+                    />
+                  </a>
                 </div>
                 <div class="social">
-                  <img src="{{ url_for('static',filename='pics/insta.png')  }}" />
+                  <a
+                    href="https://www.instagram.com"
+                  >
+                    <img
+                      src="{{ url_for('static',filename='pics/insta.png')  }}"
+                  /></a>
                 </div>
               </div>
             </div>
           </div>
         </div>
+     
+         <div class="info">
+            <img
+              src="{{ url_for('static',filename='pics/service.png') }}"
+              alt="aa"
+            />
+   
+          </div>
+     
       </div>
-    </footer>    <div class="loader"></div>
+    </footer>
+    <div class="loader"></div>
 
     <!--end contact-->
   </body>

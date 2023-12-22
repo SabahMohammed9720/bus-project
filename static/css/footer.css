@@ -233,6 +233,32 @@ footer {
   font-size: 24px;
   cursor: pointer;
 }
+
+.services .container .content2 .info img {
+  width: 70%;
+  overflow: hidden;
+  position: relative;
+  bottom: 20px;
+  transform: scaleX(-1);
+}
+
+
+.services .container .content2 .info {
+  position: relative;
+  top: 25px;
+  text-align: center;
+}
+.services .container .content2 .info p {
+  position: relative;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+  color: #2f5c86;
+  font-size: x-large;
+  padding: 20px 0;
+  font-weight: bold;
+  font-family: 'Rubik';
+}
 /*end contact*/
 .loader{
   position: fixed;

@@ -1,4 +1,4 @@
-function showNavbar() {
+function showNavbar(color1, color2 ,color3 ,color4 ) {
   document.write(`
     <!--         Nav_Bar         -->
     <div class="header" id="fixed">
@@ -10,22 +10,22 @@ function showNavbar() {
         <div class="navbar">
           <ul>
             <li>
-              <a href="home">HOME</a>
+              <a href="home" style="color:#${color1}">HOME</a>
             </li>
           </ul>
           <ul>
             <li>
-              <a href="about">ABOUT</a>
+              <a href="about" style="color:#${color2}">ABOUT</a>
             </li>
           </ul>
           <ul>
             <li>
-              <a href="add" id="services">ADD</a>
+              <a href="add" id="services" style="color:#${color3}">ADD</a>
             </li>
           </ul>
           <ul>
             <li>
-              <a href="footer">CONTACT US</a>
+              <a href="footer" style="color:#${color4}">CONTACT US</a>
             </li>
           </ul>
         </div>

@@ -1,8 +1,7 @@
 @font-face {
-  font-family: 'Rubik' ;
+  font-family: "Rubik";
   src: url(Rubik-VariableFont_wght.ttf);
 }
-
 
 .fp {
   background-color: var(--background-color);
@@ -13,44 +12,44 @@
   align-items: center;
   height: 100%;
   position: relative;
-  top: 80px;
 }
 .fp .container .land .paragraph {
   position: relative;
   top: 10px;
   width: 60%;
-position: relative;
-left: 0;
+  position: relative;
+  left: 0;
 }
 .fp .container .land .paragraph h1 {
   font-size: xxx-large;
   font-weight: bold;
   text-transform: uppercase;
-  font-family: 'Rubik';
+  font-family: "Rubik";
   color: #2f5c86;
-  text-align: left;
+  text-align: center;
 }
 .fp .container .land .paragraph p {
   color: #2f5c86;
   font-weight: bold;
   font-size: 22px;
-  font-family: 'Rubik';
-    text-align: left;
-
+  font-family: "Rubik";
+  text-align: center;
 }
 .fp .container .land button {
   background-image: var(--background-image);
   border-radius: 90px;
   padding: 20px 90px;
   color: white;
+  text-align: center;
+
   border-color: white;
   font-size: 30px;
-  margin: 40px 90px 90px;
+  margin: 40px 30% 90px ;
   border: none;
   animation: glow 1s infinite;
   transition: 0.5s;
   font-weight: bold;
-  font-family: 'Rubik';
+  font-family: "Rubik";
   text-transform: uppercase;
   cursor: pointer;
 }
@@ -63,42 +62,39 @@ left: 0;
 }
 /*end fp*/
 
-
-.loader{
+.loader {
   position: fixed;
   top: 0;
   left: 0;
-width: 100vw;
-height: 100vh;
-display: flex;
-justify-content: center;
-align-items: center;
-background-color: #f7f9fb;
-transition: opacity 0.75s , visibility 0.75s ;
-
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f7f9fb;
+  transition: opacity 0.75s, visibility 0.75s;
 }
 
-.loader-hidden{
+.loader-hidden {
   opacity: 0;
   visibility: hidden;
-
 }
 
-.loader::after{
+.loader::after {
   content: "";
   width: 75px;
   height: 75px;
   border: 15px solid #dddddd;
-  border-top-color: #2f5c86 ;
+  border-top-color: #2f5c86;
   border-radius: 50%;
   animation: loading 0.75s ease infinite;
 }
 
 @keyframes loading {
-   from{
+  from {
     transform: rotate(0turn);
-   }
-   to{
+  }
+  to {
     transform: rotate(1turn);
-   }
+  }
 }
